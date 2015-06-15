@@ -1,11 +1,13 @@
-
 def show():
-    print "Usage: EnvTransfer COMMAND [ARGS]"
-    print
-    print "  EnvTransfer command line tool."
-    print
-    print "Commands:"
-    print "  auth 		Authorization. Get token"
-    print "  upload 	Upload your environment"
-    print "  download 	Download your environment"
-    print "  help 		Show this message and exit"
+  print '''Usage: envtransfer COMMAND [ARGS]
+
+  EnvTransfer command line tool.
+
+Commands:
+  auth       Authorization. Get token
+  upload     Upload your environment
+  download   Download your environment
+  help       Show this message and exit
+'''
+
+__name__ == '__main__' and show()
