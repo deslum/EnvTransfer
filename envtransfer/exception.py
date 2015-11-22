@@ -14,9 +14,9 @@ def function_exception(func):
                 print "File successfully downloaded..."
             else:
                 func(*args)
-            return new_func
-        except urllib2.URLError:
-            print "Error connection"
+        except urllib2.URLError as e:
+            print "Connection error"
+            print e.fp.read()
         except IOError:
             print "File error"
         except TypeError:
